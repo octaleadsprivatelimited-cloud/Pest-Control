@@ -1,0 +1,30 @@
+# Ignore duplicate nested folder
+MAINFILE-2/
+
+# Ignore macOS system files
+__MACOSX/
+.DS_Store
+
+# Ignore development files
+*.zip
+*.tar.gz
+
+# Ignore documentation folder (not needed for production)
+DOCUMENTATION/
+
+# Ignore duplicate icon folder
+ICON/
+
+# Ignore git files
+.git/
+.gitignore
+
+# Ignore IDE files
+.vscode/
+.idea/
+
+# Ignore node_modules if any
+node_modules/
+
+# Ignore log files
+*.log

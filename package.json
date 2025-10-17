@@ -6,7 +6,8 @@
   "scripts": {
     "start": "npx serve .",
     "build": "echo 'Static site - no build required'",
-    "dev": "npx serve ."
+    "dev": "npx serve .",
+    "vercel-build": "echo 'Static site - no build required'"
   },
   "keywords": [
     "pest-control",
@@ -16,6 +17,9 @@
   ],
   "author": "Pest Control Template",
   "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "devDependencies": {
     "serve": "^14.0.0"
   }
