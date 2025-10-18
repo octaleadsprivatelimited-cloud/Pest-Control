@@ -33,9 +33,4 @@
       ]
     }
   ],
-  "functions": {
-    "api/form-process.js": {
-      "runtime": "nodejs18.x"
-    }
-  }
 }
