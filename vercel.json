@@ -34,8 +34,8 @@
     }
   ],
   "functions": {
-    "php/form-process.php": {
-      "runtime": "vercel-php@0.6.0"
+    "api/form-process.js": {
+      "runtime": "nodejs18.x"
     }
   }
 }

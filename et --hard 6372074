@@ -1,0 +1,12 @@
+[33m230f26d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Clean up project structure and remove duplicate files
+[33mf2320d2[m Update all pages with professional royalty-free images from Pexels
+[33md2ee468[m Fix Vercel deployment - remove problematic files and update config
+[33m384d66d[m Merge remote main branch
+[33mc0e2e93[m Fix broken images - replaced with working placeholder images
+[33mb5b8bea[m Update project files
+[33m7a1a98e[m Add all required images to home page - Updated banner slider, services, pest control, blog sections with diverse images
+[33m3f65195[m Update project structure and files
+[33mae21a7a[m Add comprehensive README.md with project documentation and setup instructions
+[33m6372074[m Initial commit: Pest Control Website Template - Complete HTML template with responsive design, multiple pages, and modern UI components
+[33m7e0d9b4[m Fix Vercel deployment: Move files to root directory and add vercel.json config
+[33m27808ac[m Initial commit: Pest Control Website Template

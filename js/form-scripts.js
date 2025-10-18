@@ -19,15 +19,24 @@ function submitForm(){
 
     $.ajax({
         type: "POST",
-        url: "php/form-process.php",
-        data: "name=" + name + "&email=" + email + "&message=" + message,
-        success : function(text){
-            if (text == "success"){
+        url: "/api/form-process",
+        contentType: "application/json",
+        data: JSON.stringify({
+            name: name,
+            email: email,
+            message: message
+        }),
+        success : function(response){
+            if (response.success){
                 formSuccess();
             } else {
                 formError();
-                submitMSG(false,text);
+                submitMSG(false, response.error || "Something went wrong");
             }
+        },
+        error: function(xhr, status, error) {
+            formError();
+            submitMSG(false, "Failed to send message. Please try again.");
         }
     });
 }

@@ -74,14 +74,39 @@ MAINFILE-2/
 
 ## 📧 Contact Form Setup
 
-To enable the contact form functionality:
+The contact form now uses a Node.js serverless function for better compatibility with Vercel deployment.
 
-1. Open `HTML/php/form-process.php`
-2. Update the email address on line 27:
-   ```php
-   $EmailTo = "your-email@example.com";
-   ```
-3. Ensure your web server supports PHP
+### Environment Variables
+
+Set up the following environment variables in your Vercel dashboard:
+
+```bash
+# SMTP Configuration (for Gmail, use these values)
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=your-email@gmail.com
+SMTP_PASS=your-app-password
+
+# Contact Email (where form submissions will be sent)
+CONTACT_EMAIL=your-contact-email@example.com
+```
+
+### Gmail Setup
+
+For Gmail SMTP:
+1. Enable 2-factor authentication on your Gmail account
+2. Generate an App Password (not your regular password)
+3. Use the App Password as `SMTP_PASS`
+
+### Alternative Email Services
+
+You can use other SMTP providers like:
+- SendGrid
+- Mailgun
+- AWS SES
+- Any SMTP-compatible service
+
+Just update the SMTP configuration variables accordingly.
 
 ## 🎨 Customization
 
