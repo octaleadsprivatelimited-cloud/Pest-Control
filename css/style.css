@@ -110,12 +110,13 @@ html, body {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: -100px 0 0 -100px;
+    margin: -50px 0 0 -100px;
     width: 200px;
-    height: 200px;
+    height: 100px;
     background-image: url("../images/logo.png");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
 }
 a {
     color: #343434;
@@ -407,12 +408,16 @@ p {
 	display: none;
 }
 .navbar-main .navbar-brand > img {
-	width: 100%;
+	width: 120px;
+	height: 40px;
+	object-fit: contain;
     -webkit-transition: 0.2s all linear;
 	        transition: 0.2s all linear;
 }
 .navbar-main.stiky .navbar-brand > img {
-    width: 60%;
+    width: 100px;
+	height: 35px;
+	object-fit: contain;
 }
 .navbar-main .nav > li > a {
     position: relative;
@@ -2946,15 +2951,21 @@ p.help-block.text-danger li {
 		display:none;
 	}
 	.navbar-main .navbar-brand > img {
-		width: 40%;
+		width: 100px;
+		height: 35px;
+		object-fit: contain;
 	}
 	.navbar-main.stiky .navbar-brand > img {
-		width: 40%;
+		width: 90px;
+		height: 30px;
+		object-fit: contain;
 	}
 	
 	.navbar-brand > img {
 		display: block;
-		width: 40%;
+		width: 100px;
+		height: 35px;
+		object-fit: contain;
 	}
 	.work-info {
 		position: static;
@@ -3104,6 +3115,8 @@ p.help-block.text-danger li {
 }
 @media (min-width: 768px) {
 	.navbar-main.stiky .navbar-brand > img {
-		width: 60%;
+		width: 110px;
+		height: 38px;
+		object-fit: contain;
 	}
 }
