@@ -147,8 +147,8 @@ For support and customization help, please contact the development team.
 
 ## 📞 Contact Information
 
-- **Phone**: +62 7144 3300
-- **Email**: info@pestco.com
+- **Phone**: +91 12-1-331/82/B
+- **Email**: famouspestcontrolservices77@gmail.com
 - **Hours**: Mon-Sat: 9.00-18.00
 
 ---
