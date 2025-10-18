@@ -3120,3 +3120,45 @@ p.help-block.text-danger li {
 		object-fit: contain;
 	}
 }
+
+/* Enhanced responsive image styles */
+img {
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+/* Ensure background images are responsive */
+.bg-responsive {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/* Testimonial images */
+.user-pic {
+	border-radius: 50%;
+	object-fit: cover;
+	width: 100px;
+	height: 100px;
+}
+
+/* Service images */
+.feature-item img,
+.box-image img,
+.blog-item img {
+	transition: transform 0.3s ease;
+}
+
+.feature-item img:hover,
+.box-image img:hover,
+.blog-item img:hover {
+	transform: scale(1.05);
+}
