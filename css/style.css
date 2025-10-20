@@ -2710,6 +2710,13 @@ p.help-block.text-danger li {
 	margin-bottom: 20px;
 	min-height: 250px;
 }
+.footer,
+.footer p,
+.footer .footer-item,
+.footer .footer-item .list a,
+.footer .footer-blog-lead{
+	color: #fff;
+}
 .footer-item .list li{
 	padding: 6px 0;
 }
