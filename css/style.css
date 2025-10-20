@@ -2629,12 +2629,14 @@ p.help-block.text-danger li {
 .footer{
 	position: relative;
 }
+
 .bgi-footer{
     background: #252525 url('../images/1680x768.jpg') no-repeat fixed center center; 
 	-webkit-background-size: cover; 
 	-moz-background-size: cover; 
 	-o-background-size: cover; 
 	background-size: cover;
+    position: relative;
 }
 
 .bgi-footer:before{
@@ -2645,7 +2647,13 @@ p.help-block.text-danger li {
 	right: 0;
 	bottom: 0;
 	background: rgba(35,36,38,0.25); /* #232426 overlay */
+	z-index: 0;
 	pointer-events: none;
+}
+
+.bgi-footer > *{
+	position: relative;
+	z-index: 1;
 }
 .box-info{
 	padding: 0 ;
