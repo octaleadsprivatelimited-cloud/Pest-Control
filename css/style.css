@@ -82,7 +82,7 @@ table {
 body{
 	margin: 0;
 	padding: 0;
-	font-family: 'Merriweather', serif;
+	font-family: 'Outfit', sans-serif;
 	font-size: 15px;
 	line-height: 24px;
 	color: #666;
@@ -134,7 +134,7 @@ h2,
 h3, 
 h4, 
 h5 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Outfit', sans-serif;
 	font-weight: 700;
 	margin-top: 10px;
 	margin-bottom: 20px;
@@ -575,9 +575,9 @@ p {
 .carousel-caption .caption-heading {
     text-align: left;
     color: #fff;
-    font-size: 48px;
-    line-height: 68px;
-	font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+    line-height: 58px;
+	font-family: 'Outfit', sans-serif;
     font-weight: 700;
 	text-shadow: none;
 	display: inline-block;
@@ -600,6 +600,12 @@ p {
 }
 .caption-desc{
 	margin-top: 40px;
+}
+.caption-text p{
+	font-size: 20px;
+	line-height: 32px;
+	font-family: 'Outfit', sans-serif;
+	font-weight: 400;
 }
 .btn-banner{
     color: #fff;
