@@ -17,6 +17,7 @@
   ],
   "author": "Pest Control Template",
   "license": "MIT",
+  "type": "module",
   "engines": {
     "node": ">=18.0.0"
   },
