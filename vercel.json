@@ -3,8 +3,8 @@
   "framework": null,
   "installCommand": "echo 'skip install'",
   "buildCommand": "echo 'Static site - no build required'",
-  "routes": [
-    { "src": "/(.*)", "dest": "/$1" }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/$1" }
   ],
   "headers": [
     {
