@@ -1,4 +1,4 @@
-const nodemailer = require('nodemailer');
+import nodemailer from 'nodemailer';
 
 export default async function handler(req, res) {
   // Only allow POST requests
@@ -24,8 +24,8 @@ export default async function handler(req, res) {
   }
 
   try {
-    // Create transporter (you'll need to configure this with your email service)
-    const transporter = nodemailer.createTransporter({
+    // Create transporter (configure with your email service)
+    const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST || 'smtp.gmail.com',
       port: process.env.SMTP_PORT || 587,
       secure: false,
