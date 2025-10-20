@@ -1,5 +1,5 @@
 import nodemailer from 'nodemailer';
-export const config = { runtime: 'nodejs18.x' };
+export const config = { runtime: 'nodejs20.x' };
 
 export default async function handler(req, res) {
   // Only allow POST requests
@@ -7,7 +7,30 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { name, email, message } = req.body;
+  // Robust body parsing for local runs and Vercel
+  let name, email, message;
+  try {
+    if (req.body && typeof req.body === 'object') {
+      ({ name, email, message } = req.body);
+    } else {
+      const contentType = (req.headers && (req.headers['content-type'] || req.headers['Content-Type'])) || '';
+      let raw = '';
+      for await (const chunk of req) { raw += chunk; }
+      if (raw) {
+        if (contentType.includes('application/json')) {
+          const parsed = JSON.parse(raw);
+          ({ name, email, message } = parsed);
+        } else if (contentType.includes('application/x-www-form-urlencoded')) {
+          const params = new URLSearchParams(raw);
+          name = params.get('name');
+          email = params.get('email');
+          message = params.get('message');
+        }
+      }
+    }
+  } catch (e) {
+    // Fall through to validation error below
+  }
 
   // Validate required fields
   if (!name || !email || !message) {
