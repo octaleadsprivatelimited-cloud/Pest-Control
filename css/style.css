@@ -2626,12 +2626,25 @@ p.help-block.text-danger li {
 .footer{
 	padding: 50px 0 20px 0;
 }
+.footer{
+	position: relative;
+}
 .bgi-footer{
     background: #252525 url('../images/1680x768.jpg') no-repeat fixed center center; 
 	-webkit-background-size: cover; 
 	-moz-background-size: cover; 
 	-o-background-size: cover; 
 	background-size: cover;
+}
+.bgi-footer:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.25); /* light black overlay */
+	pointer-events: none;
 }
 .box-info{
 	padding: 0 ;
