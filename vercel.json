@@ -1,4 +1,10 @@
 {
   "version": 2,
-  "buildCommand": "echo 'Static site - no build required'"
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "." }
+    }
+  ]
 }
