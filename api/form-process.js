@@ -7,30 +7,8 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  // Robust body parsing for local runs and Vercel
-  let name, email, message;
-  try {
-    if (req.body && typeof req.body === 'object') {
-      ({ name, email, message } = req.body);
-    } else {
-      const contentType = (req.headers && (req.headers['content-type'] || req.headers['Content-Type'])) || '';
-      let raw = '';
-      for await (const chunk of req) { raw += chunk; }
-      if (raw) {
-        if (contentType.includes('application/json')) {
-          const parsed = JSON.parse(raw);
-          ({ name, email, message } = parsed);
-        } else if (contentType.includes('application/x-www-form-urlencoded')) {
-          const params = new URLSearchParams(raw);
-          name = params.get('name');
-          email = params.get('email');
-          message = params.get('message');
-        }
-      }
-    }
-  } catch (e) {
-    // Fall through to validation error below
-  }
+  // Simple body parsing for Vercel
+  const { name, email, message } = req.body || {};
 
   // Validate required fields
   if (!name || !email || !message) {
