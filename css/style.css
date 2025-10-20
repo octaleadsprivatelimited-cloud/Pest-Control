@@ -2639,21 +2639,21 @@ p.help-block.text-danger li {
     position: relative;
 }
 
-.bgi-footer:before{
+.footer.bgi-footer::before {
 	content: '';
 	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: rgba(35,36,38,0.25); /* #232426 overlay */
-	z-index: 0;
-	pointer-events: none;
+	background-color: #232426; /* The overlay color */
+	opacity: 0.6; /* Adjust the opacity to make the background image visible through the overlay */
+	z-index: 1; /* Ensure the overlay sits above the background image */
 }
 
 .bgi-footer > *{
 	position: relative;
-	z-index: 1;
+	z-index: 2;
 }
 .box-info{
 	padding: 0 ;
