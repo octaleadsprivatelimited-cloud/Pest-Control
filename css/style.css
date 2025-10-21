@@ -3226,6 +3226,26 @@ img {
 		padding-right: 15px;
 	}
 	
+	/* Logo adjustments for mobile */
+	.navbar-brand {
+		padding: 5px 15px;
+	}
+	
+	.navbar-brand > img {
+		width: 80px !important;
+		height: 30px !important;
+		max-width: 80px !important;
+		object-fit: contain !important;
+		display: block !important;
+	}
+	
+	.navbar-main.stiky .navbar-brand > img {
+		width: 70px !important;
+		height: 25px !important;
+		max-width: 70px !important;
+		object-fit: contain !important;
+	}
+	
 	/* Ensure all images are responsive */
 	img {
 		max-width: 100% !important;
@@ -3241,6 +3261,27 @@ img {
 	p, h1, h2, h3, h4, h5, h6 {
 		word-wrap: break-word;
 		overflow-wrap: break-word;
+	}
+}
+
+/* Additional mobile logo adjustments for smaller screens */
+@media (max-width: 479px) {
+	.navbar-brand {
+		padding: 3px 10px;
+	}
+	
+	.navbar-brand > img {
+		width: 60px !important;
+		height: 25px !important;
+		max-width: 60px !important;
+		object-fit: contain !important;
+	}
+	
+	.navbar-main.stiky .navbar-brand > img {
+		width: 50px !important;
+		height: 20px !important;
+		max-width: 50px !important;
+		object-fit: contain !important;
 	}
 }
 
