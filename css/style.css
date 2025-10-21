@@ -697,9 +697,6 @@ p {
 /* ==========================
 4. Services
 ============================= */
-.services{
-	
-}
 .services-item{
 	background-color: #fff;
 	height: 500px;
@@ -713,9 +710,6 @@ p {
 }
 .feature{
 	padding: 50px 0 0 0;
-}
-.feature-item{
-
 }
 .feature-item .image {
     overflow: hidden;
@@ -921,9 +915,6 @@ p {
 /* ==========================
 5. Pest Control
 ============================= */
-.pest-control{
-	
-}
 .box-image{
 	position: relative;
 	margin-bottom: 30px;
@@ -984,7 +975,6 @@ p {
 }
 .panel-pricing .panel-heading .price{
 	font-weight: 700;
-	display: inline-block;
 	text-align: right;
     float: right;
 	margin-top: 10px;
@@ -1003,9 +993,6 @@ p {
 /* ==========================
 6. Stats
 ============================= */
-.stats{
-	
-}
 .bg1{
 	background: #7A4D12 url('../images/bgi.jpg') no-repeat fixed center center; 
 	-webkit-background-size: cover; 
@@ -1020,7 +1007,6 @@ p {
 	clear: both;
 }
 .box-stat .icon {
-	display: inline-block;
 	color: #F7941D;
 	font-size: 48px;
 	float: right;
@@ -1054,7 +1040,6 @@ p {
 	clear: both;
 }
 .box-icon .icon{
-	display: inline-block;
 	color: #343434;
 	font-size: 35px;
 	float: left;
@@ -1205,9 +1190,6 @@ p {
 	-o-background-size: cover; 
 	background-size: cover;
 }
-.team{
-	/* background-color: #222; */
-}
 .nav-tabs {
     border-bottom: 0;
 	margin-left: 0;
@@ -1249,9 +1231,6 @@ p {
 .nav-tabs > li.active > a:hover  .fa, 
 .nav-tabs > li.active > a:focus  .fa{
     color: #553216;
-}
-.tab-content{
-	
 }
 .body-tab{
 	padding: 20px 0;
@@ -1341,9 +1320,6 @@ p {
 /* ==========================
 8. Blog / News
 ============================= */
-.blog{
-	
-}
 .blog-item{
 	margin-bottom:40px;
 }
@@ -1380,7 +1356,6 @@ p {
 	background-color: #F7941D;
     color: #fff;
     padding: 10px 10px;
-    display: inline-block;
     float: left;
 	font-family: 'Montserrat', sans-serif;
 }
@@ -1625,9 +1600,6 @@ p {
 	margin-left:30%;
 	padding-top:13px;
 	border-radius:50%;
-}
-.post-item .carousel-control .fa {
-    
 }
 .post-item .carousel-control.right {
     right: 35px;
@@ -1951,9 +1923,6 @@ ul.list-inline.bullet-lists li:hover {
 .leave-comment-box .title-heading span{
 	color: #F7941D;
 }
-.form-comment{
-
-}
 .form-comment .form-control{
     padding: 24px 12px;
 	border-radius: 0;
@@ -2028,7 +1997,6 @@ ul.list-inline.bullet-lists li:hover {
 }
 .testimony .item-testimony .people{
 	background-color: #fff;
-	display: inline-block;
 	padding: 20px 20px;
 	margin-top: -40px;
 	float: right;
@@ -2131,9 +2099,6 @@ ul.list-inline.bullet-lists li:hover {
 /* ==========================
 10. Client
 ============================= */
-.stat-client{
-	
-}
 .client-list{
 	border-bottom: 1px solid #3C3C3C;
 	padding: 40px 0;
@@ -2513,9 +2478,6 @@ p.help-block.text-danger li {
 .has-error .control-label{
 	text-align: left;
 	font-weight: 700;
-}
-.contact-address{
-	
 }
 .contact-address-item{
 	margin-bottom:40px;
@@ -2932,9 +2894,6 @@ p.help-block.text-danger li {
 }
 .sitemap li a:hover{
 	color: #fff;
-}
-.footer-getintouch{
-	
 }
 .footer-getintouch-item{
 	clear:both;
