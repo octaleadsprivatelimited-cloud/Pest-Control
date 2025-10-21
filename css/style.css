@@ -2652,7 +2652,7 @@ p.help-block.text-danger li {
 	right: 0;
 	bottom: 0;
 	background-color: #232426; /* The overlay color */
-	opacity: 0.8; /* Increased overlay effect to make background less visible */
+	opacity: 0.9; /* Increased overlay effect even more */
 	z-index: 1; /* Ensure the overlay sits above the background image */
 }
 
@@ -2721,6 +2721,12 @@ p.help-block.text-danger li {
 .footer .footer-item .list a,
 .footer .footer-blog-lead{
 	color: #fff;
+}
+.footer a,
+.footer h4 a,
+.footer .box-info-body a,
+.footer .box-info-body h4 a{
+	color: #fff !important;
 }
 .footer-item .list li{
 	padding: 6px 0;
