@@ -2665,6 +2665,9 @@ p.help-block.text-danger li {
 	border: 1px solid #4A4B4F;
 	border-bottom: 3px solid #F7941D;
 	margin-bottom: 30px;
+	height: 120px;
+	display: flex;
+	align-items: center;
 }
 .box-info:hover{
 	background-color: #252525;
@@ -2680,8 +2683,10 @@ p.help-block.text-danger li {
 	padding: 20px 0 20px 20px;
 	border-left: 1px solid #4A4B4F;
 	color: #fff;
-	display: inline-block;
-	vertical-align: middle;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 .box-info .box-info-body p{
 	color: #ccc;
