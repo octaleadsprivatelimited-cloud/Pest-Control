@@ -2733,6 +2733,14 @@ p.help-block.text-danger li {
 .footer .box-info-body h4 a{
 	color: #fff !important;
 }
+.footer .box-info-body h4 a{
+	font-size: 14px !important;
+}
+.panel-body,
+.panel-body p,
+.panel-collapse .panel-body{
+	color: #000 !important;
+}
 .footer-item .list li{
 	padding: 6px 0;
 }
