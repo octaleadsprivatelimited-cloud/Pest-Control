@@ -3285,6 +3285,25 @@ img {
 	}
 }
 
+/* Mobile hero section - remove brown background, show only image */
+@media (max-width: 768px) {
+	.section.banner {
+		background-color: transparent !important;
+	}
+	
+	.banner {
+		background-color: transparent !important;
+	}
+	
+	.slides-container {
+		background-color: transparent !important;
+	}
+	
+	.slides-container li {
+		background-color: transparent !important;
+	}
+}
+
 .img-responsive {
 	display: block;
 	max-width: 100%;
