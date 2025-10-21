@@ -2652,7 +2652,7 @@ p.help-block.text-danger li {
 	right: 0;
 	bottom: 0;
 	background-color: #232426; /* The overlay color */
-	opacity: 0.3; /* Increased brightness by reducing opacity */
+	opacity: 0.8; /* Increased overlay effect to make background less visible */
 	z-index: 1; /* Ensure the overlay sits above the background image */
 }
 
